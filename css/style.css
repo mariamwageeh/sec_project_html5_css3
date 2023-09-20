@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  body{
+    perspective: 600px;
+  }
+nav ul li{
+   
+    display: inline-block;
+    margin:10px 10px;
+    /* padding: 40px 0px; */
+    font-size: 20px;
+    color:#F8A488 ;
+}
+nav ul li i{
+    font-size: 30px;
+}
+.contain{
+    width: 80%;
+    margin: auto;
+}
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.logo img{
+    margin-right: 100px;
+   margin-top: 10px;
+    width: 100px;
+    height: 50px;
+}
+.overlay table tr td{
+    padding-right: 10px;
+}
+.overlay th{
+   padding-right: 50px;
+}
+.nav{
+    position: relative;
+}
+.ho{
+    display: inline-block;
+}
+.ho:hover table {
+    opacity: 1;
+    display: block;
+    
+}
+/* a li{
+    display: inline-block;
+} */
+/* a li:hover{
+width: auto;
+height: auto;
+border: 2px solid brown;
+transition: 2s;
+} */
+.item{
+    position: relative;
+    /* width: 50px;
+    height: 30px; */
+}
+.item:before,.item:after{
+    content:" ";
+    position: absolute;
+    border-style: solid;
+    border-color: brown;
+    top: 0;
+    left: 0;
+   width: 100%;
+   height: 180%;
+   margin-top: -12px;
+   
+}
+.item:before{
+    transform: scale3d(1,0,1);
+    transition: transform 0.3s;
+}
+.item:hover:before{
+ border-width: 0 2px;
+ transform: scale3d(1,1,1);
+}
+.item:after{
+    transition: transform 0.5s;
+    transform: scale3d(0,1,1);
+   
+}
+.item:hover:after{
+ border-width: 2px 0;
+ transform: scale3d(1,1,1);
+
+}
+table{
+    color: #F8A488;
+    border: 2px solid #F8A488 ;
+    width: 400px;
+    opacity: 0;
+    display: none;
+    background-color: white;
+    position: absolute;
+}
+.pic{
+    width: 80%;
+    margin: auto;
+}
+
+.pic img {
+    width:1150px;
+    height: 500px;
+/* margin-left: -120px; */
+margin-bottom: 70px;
+
+}
+/* ////////////////////////////////////// */
+.category{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    color: #F8A488;
+   margin-bottom: 50px;
+text-align: center;
+}
+.line:hover{
+    width: 290px;
+}
+.line{
+    border: 1px solid #F8A488;
+    width: 190px;
+    margin: auto;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+.cate{
+   display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 58px;
+    margin-bottom: 100px;
+    
+}
+.cate_1{
+    
+    position: relative;
+}
+.cate_1:hover  a{
+    opacity: 1;
+    visibility: visible;
+}
+.cate_1 p {
+    color: brown;
+}
+.cate_1 h4{
+    color: brown;
+}
+.cate_1 a{
+    display: block;
+     background-color: white;
+     color: brown;
+     width: 30px;
+     height: 30px;
+     border: 2px solid brown;
+     text-align: center;
+     line-height: 30px;
+     position: absolute;
+     margin-left: 150px;
+     margin-top: -30px;
+     opacity: 0;
+     visibility: hidden;
+}
+/* //////////////// */
+.dis1{
+    color: brown;
+    text-transform: capitalize;
+  padding-top: 20px;
+   border: 2px solid rgb(246, 214, 214);
+}
+.dis1 i{
+    font-size: 40px;
+}
+.dis1 h2{
+    display: inline-block;
+    margin-left: 20px;
+    color:brown;
+    margin-top: 20px;
+}
+.dis1_lines{
+    display: inline-block;
+   width: 50px;
+    border: 0.5px solid #eb5f30;
+    margin-top: 50px;
+}
+.l1{
+    margin-left: 380px;
+}
+.dis2,.dis3{
+    text-transform: uppercase;
+    background-image: url("../images/shoes.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: brown;
+    border: 2px solid rgb(246, 214, 214);
+    
+}
+.dis2:hover,.dis3:hover{
+    width: 290px;
+    height: 350px;
+margin-top: -30px;
+}
+.dis2 h4,.dis3 h4{
+margin-top: 20px;
+}
+.dis3{
+    background-image: url("../images/bages.webp");
+}
+.discount{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 550px 275px 275px;
+    grid-template-rows: 300px;
+    grid-column-gap: 35px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+/* ////////////////////////////////////////////////////// */
+.icon1{
+    width: 40px;
+    height: 70px;
+    background-image: url("../images/icon1.png");
+   background-repeat: no-repeat;
+   background-position: top;
+   background-size: cover;
+margin: auto;
+}
+.icon1:hover{
+    
+    background-position:bottom;
+    transition: 1s;
+}
+.icon2{
+    background-image: url("../images/icon2.png");
+   
+}
+.icon3{
+    background-image: url("../images/icon3.png");
+}
+.icon4{
+    background-image: url("../images/icon4.png");
+}
+.icon5{
+    background-image: url("../images/icon5.png");
+}
+.free1 h2{
+    color: rgb(127, 121, 121);
+    
+    text-align: center;
+}
+
+.free1 p{
+    color: brown;
+    text-align: center;
+}
+.l{
+    width: 1px;
+    height: 140px;
+    border: 1px solid brown;
+    margin-left: 240px;
+    margin-top: -120px;
+}
+.free{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    
+    width: 80%;
+    margin: auto;
+   
+}
+/* //////////////////////////// */
+.li{
+    width: 80%;
+    margin: auto;
+    border: 1px solid brown;
+    margin-bottom: 100px;
+    margin-left: 115px;
+}
+/* //////////////////////////////// */
+.kind{
+    margin-bottom: 100px;
+    margin: auto;
+    width: 80%;
+}
+.kind p{
+    display: inline-block;
+    margin-right: 80px;
+    color: brown;
+    font-size: 20px;
+    text-transform: capitalize;
+   
+}
+.pro{
+    position: relative;
+transform-style: preserve-3d;
+width: 300px;
+height: 600px;
+}
+.pro:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    background-image: url("../images/men-f.jpg");
+    width: 300px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+.back{
+    position: absolute;
+    background-image: url("../images/men-b.jpg");
+    width: 300px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+    
+}
+.front2{
+    background-image: url("../images/bag-f.jpg");
+}
+.back2{
+    background-image: url("../images/bag-b.jpg");
+}
+.front3{
+    background-image: url("../images/wedding.webp");
+}
+.back3{
+    background-image: url("../images/weeding-b.webp");
+}
+.front4{
+    background-image: url("../images/dress-f.jpg");
+}
+.back4{
+    background-image: url("../images/dress-b.jpg");
+}
+.front5{
+    background-image: url("../images/shoses-f.jpg");
+}
+.back5{
+    background-image: url("../images/shoses-b.webp");
+}
+.front6{
+    background-image: url("../images/child-f.jpg");
+}
+.back6{
+    background-image: url("../images/child-b.jpg");
+}
+
+.icon{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.icon i{
+    color: white;
+    font-size: 20px;
+}
+.icon i:hover{
+    color: #F8A488;
+}
+.foot a i{
+    color: #F8A488;
+}
+.foot{
+    color:brown;
+}
+.pa{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-template-rows: repeat(2,700px);
+    grid-gap: 10px 5px;
+    margin-top: 100px;
+}
